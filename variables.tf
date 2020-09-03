@@ -136,3 +136,9 @@ variable "subsription_filter_policy" {
   type        = string
   default     = null
 }
+
+variable "hash_extra" {
+  description = "The string to add into the lambda module's hashing function. Useful when building same source path for different functions."
+  type        = string
+  default     = ""
+}
